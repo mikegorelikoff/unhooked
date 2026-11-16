@@ -78,7 +78,17 @@ want=$(printf '%s\n' "$line" | awk '{print $1}')
 file=$(printf '%s\n' "$line" | awk '{print $2}')
 
 say "Downloading $file..."
-fetch "$url/$file" "$tmp/$file" || die "cannot download $url/$file"
+if [ "$VERSION" = v0.1.0-preview.1 ]; then
+  # This preview publishes the compressed archive in six parts per architecture.
+  [ "$file" = "hx-$VERSION-$target.tar.gz" ] || die "unexpected archive name '$file'"
+  : > "$tmp/$file"
+  for part in aa ab ac ad ae af; do
+    fetch "$url/$file.part-$part" "$tmp/part" || die "cannot download $url/$file.part-$part"
+    cat "$tmp/part" >> "$tmp/$file"
+  done
+else
+  fetch "$url/$file" "$tmp/$file" || die "cannot download $url/$file"
+fi
 
 got=$(sha256_of "$tmp/$file")
 if [ "$got" != "$want" ]; then

@@ -11,7 +11,7 @@ export PATH="$HOME/.local/bin:$PATH"
 hx --version
 ```
 
-The installer selects the archive for your Mac, verifies its SHA-256 checksum and installs `hx` in `~/.local/bin`. Set `HX_INSTALL_DIR` to choose another destination. Add the PATH line to your shell configuration if you want `hx` to be available in new terminals.
+The installer downloads and reassembles the archive for your Mac, verifies its SHA-256 checksum and installs `hx` in `~/.local/bin`. Set `HX_INSTALL_DIR` to choose another destination. Add the PATH line to your shell configuration if you want `hx` to be available in new terminals.
 
 In a Git project, run `hx init` and review the changes it proposes. Start with [the getting started guide](docs/getting-started.md).
 
