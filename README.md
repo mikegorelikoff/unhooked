@@ -11,10 +11,10 @@
 **Install the CLI.** The public preview has ready-to-run Apple Silicon and Intel packages. See [platform availability](https://github.com/mikegorelikoff/unhooked/wiki/Install-and-connect-agents#install-the-cli) for Linux and Windows.
 
 ```sh
-curl -fsSL https://github.com/mikegorelikoff/unhooked/releases/download/v0.1.0-preview.1/install.sh -o install-unhooked.sh
-sh install-unhooked.sh
-export PATH="$HOME/.local/bin:$PATH"
-hx --version
+curl -fsSL https://github.com/mikegorelikoff/unhooked/releases/download/v0.1.0-preview.1/install.sh -o install-unhooked.sh &&
+  sh install-unhooked.sh &&
+  export PATH="$HOME/.local/bin:$PATH" &&
+  hx --version
 ```
 
 **Set up a Git project.** Try it in a scratch repository first. `hx init --dry-run` previews the files. `hx init` asks for your agent and skill set and applies changes after confirmation.
