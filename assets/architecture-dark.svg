@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 392" role="img" aria-label="Architecture: drivers call the core, the core uses adapters">
+<title>Architecture: drivers call the core, the core uses adapters</title>
+<defs><marker id="ah" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1L6 4L1 7" fill="none" stroke="#A1A1AA" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="ahA" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1L6 4L1 7" fill="none" stroke="#F97316" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<rect width="960" height="392" fill="#0B0B0C"/>
+<rect x="344.5" y="48.5" width="271" height="319" rx="12" fill="#0B0B0C" stroke="#F97316" stroke-width="1"/>
+<text x="48" y="36" font-family='ui-sans-serif, -apple-system, "Inter", "Segoe UI", sans-serif' font-size="13" font-weight="400" fill="#A1A1AA" text-anchor="start">Drivers</text>
+<rect x="48.5" y="116.5" width="239" height="39" rx="8" fill="#0B0B0C" stroke="#52525B" stroke-width="1"/>
+<text x="64" y="141" font-family='ui-sans-serif, -apple-system, "Inter", "Segoe UI", sans-serif' font-size="15" font-weight="400" fill="#FAFAF9" text-anchor="start">hx CLI</text>
+<rect x="48.5" y="164.5" width="239" height="39" rx="8" fill="#0B0B0C" stroke="#52525B" stroke-width="1"/>
+<text x="64" y="189" font-family='ui-sans-serif, -apple-system, "Inter", "Segoe UI", sans-serif' font-size="15" font-weight="400" fill="#FAFAF9" text-anchor="start">Agent hooks</text>
+<rect x="48.5" y="212.5" width="239" height="39" rx="8" fill="#0B0B0C" stroke="#52525B" stroke-width="1"/>
+<text x="64" y="237" font-family='ui-sans-serif, -apple-system, "Inter", "Segoe UI", sans-serif' font-size="15" font-weight="400" fill="#FAFAF9" text-anchor="start">MCP server</text>
+<rect x="48.5" y="260.5" width="239" height="39" rx="8" fill="#0B0B0C" stroke="#52525B" stroke-width="1"/>
+<text x="64" y="285" font-family='ui-sans-serif, -apple-system, "Inter", "Segoe UI", sans-serif' font-size="15" font-weight="400" fill="#FAFAF9" text-anchor="start">CI and git hooks</text>
+<text x="360" y="36" font-family='ui-sans-serif, -apple-system, "Inter", "Segoe UI", sans-serif' font-size="13" font-weight="400" fill="#A1A1AA" text-anchor="start">Core</text>
+<rect x="360.5" y="64.5" width="239" height="39" rx="8" fill="#0B0B0C" stroke="#52525B" stroke-width="1"/>
+<text x="376" y="89" font-family='ui-sans-serif, -apple-system, "Inter", "Segoe UI", sans-serif' font-size="15" font-weight="400" fill="#FAFAF9" text-anchor="start">Run engine</text>
+<rect x="360.5" y="112.5" width="239" height="39" rx="8" fill="#0B0B0C" stroke="#52525B" stroke-width="1"/>
+<text x="376" y="137" font-family='ui-sans-serif, -apple-system, "Inter", "Segoe UI", sans-serif' font-size="15" font-weight="400" fill="#FAFAF9" text-anchor="start">Gates</text>
+<rect x="360.5" y="160.5" width="239" height="39" rx="8" fill="#0B0B0C" stroke="#52525B" stroke-width="1"/>
+<text x="376" y="185" font-family='ui-sans-serif, -apple-system, "Inter", "Segoe UI", sans-serif' font-size="15" font-weight="400" fill="#FAFAF9" text-anchor="start">Event log</text>
+<rect x="360.5" y="208.5" width="239" height="39" rx="8" fill="#0B0B0C" stroke="#52525B" stroke-width="1"/>
+<text x="376" y="233" font-family='ui-sans-serif, -apple-system, "Inter", "Segoe UI", sans-serif' font-size="15" font-weight="400" fill="#FAFAF9" text-anchor="start">Config layers</text>
+<rect x="360.5" y="256.5" width="239" height="39" rx="8" fill="#0B0B0C" stroke="#52525B" stroke-width="1"/>
+<text x="376" y="281" font-family='ui-sans-serif, -apple-system, "Inter", "Segoe UI", sans-serif' font-size="15" font-weight="400" fill="#FAFAF9" text-anchor="start">Artifacts</text>
+<rect x="360.5" y="304.5" width="239" height="39" rx="8" fill="#0B0B0C" stroke="#52525B" stroke-width="1"/>
+<text x="376" y="329" font-family='ui-sans-serif, -apple-system, "Inter", "Segoe UI", sans-serif' font-size="15" font-weight="400" fill="#FAFAF9" text-anchor="start">Access policy</text>
+<text x="672" y="36" font-family='ui-sans-serif, -apple-system, "Inter", "Segoe UI", sans-serif' font-size="13" font-weight="400" fill="#A1A1AA" text-anchor="start">Adapters</text>
+<rect x="672.5" y="64.5" width="239" height="39" rx="8" fill="#0B0B0C" stroke="#52525B" stroke-width="1"/>
+<text x="688" y="89" font-family='ui-sans-serif, -apple-system, "Inter", "Segoe UI", sans-serif' font-size="15" font-weight="400" fill="#FAFAF9" text-anchor="start">Files (TOON)</text>
+<rect x="672.5" y="112.5" width="239" height="39" rx="8" fill="#0B0B0C" stroke="#52525B" stroke-width="1"/>
+<text x="688" y="137" font-family='ui-sans-serif, -apple-system, "Inter", "Segoe UI", sans-serif' font-size="15" font-weight="400" fill="#FAFAF9" text-anchor="start">Git</text>
+<rect x="672.5" y="160.5" width="239" height="39" rx="8" fill="#0B0B0C" stroke="#52525B" stroke-width="1"/>
+<text x="688" y="185" font-family='ui-sans-serif, -apple-system, "Inter", "Segoe UI", sans-serif' font-size="15" font-weight="400" fill="#FAFAF9" text-anchor="start">Agents</text>
+<rect x="672.5" y="208.5" width="239" height="39" rx="8" fill="#0B0B0C" stroke="#52525B" stroke-width="1"/>
+<text x="688" y="233" font-family='ui-sans-serif, -apple-system, "Inter", "Segoe UI", sans-serif' font-size="15" font-weight="400" fill="#FAFAF9" text-anchor="start">Storage</text>
+<rect x="672.5" y="256.5" width="239" height="39" rx="8" fill="#0B0B0C" stroke="#52525B" stroke-width="1"/>
+<text x="688" y="281" font-family='ui-sans-serif, -apple-system, "Inter", "Segoe UI", sans-serif' font-size="15" font-weight="400" fill="#FAFAF9" text-anchor="start">External MCP</text>
+<rect x="672.5" y="304.5" width="239" height="39" rx="8" fill="#0B0B0C" stroke="#52525B" stroke-width="1"/>
+<text x="688" y="329" font-family='ui-sans-serif, -apple-system, "Inter", "Segoe UI", sans-serif' font-size="15" font-weight="400" fill="#FAFAF9" text-anchor="start">Telemetry</text>
+<path d="M288 208H344" fill="none" stroke="#52525B" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M616 208H672" fill="none" stroke="#52525B" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah)"/>
+</svg>
