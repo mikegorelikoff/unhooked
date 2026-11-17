@@ -1,22 +1,26 @@
-# Get started with hx
+# Run your first workflow
 
-Use a test Git repository for your first run. From the repository root:
+[Install hx and set up your agent](install-and-agents.md) in a test Git repository. Then run:
 
 ```sh
-hx init
-hx doctor
 hx start .agents/skills/hx-tour
+hx status
 ```
 
-The setup wizard lets you choose an agent and a skill pack, previews the project changes and applies them after approval. Skills live in `.agents/skills`. The wizard adds a managed block to the project's `AGENTS.md`.
+`hx start` opens a run and shows its first step. Follow the step, then run `hx done`. The CLI runs the required checks and gives you the next step if they pass. If a check fails, it explains why and leaves you on the current step. Start a new session and use `hx resume` to pick up from the state in `.agents/hx/`.
 
-`hx start` shows the first step. When you finish the work for that step, run `hx done`. If a gate fails, `hx` reports what needs attention and keeps you on the current step. Run `hx status` to see where you are or `hx resume` to read the current step in a new session.
+## Pick a skill
 
-```sh
-hx route "write a spec for DEMO-42"
-hx validate
-```
+Try `hx route "spec this ticket DEMO-42"` to see which skill matches a request. Use `hx init` with the full pack for access to all the categories below.
 
-Use `hx route` to find the skill for a request. Use `hx validate` to check the installed skill definitions. The preview includes skills for planning, requirements, implementation, review, QA and release. Mutation testing and generated test candidates require compatible adapters configured in the project.
+| Work | Example skills |
+| --- | --- |
+| Discovery and planning | `hx-idea`, `hx-prfaq`, `hx-story-map`, `hx-sprint-plan` |
+| Specification and design | `hx-spec`, `hx-spec-review`, `hx-architecture` |
+| Delivery and review | `hx-implement`, `hx-quality-gate`, `hx-code-review`, `hx-verify`, `hx-commit` |
+| QA and release | `hx-test-cases`, `hx-qa`, `hx-test-gen`, `hx-release` |
+| Workflow routing and improvement | `hx-flow`, `hx-orchestrate`, `hx-skill-eval`, `hx-improve` |
 
-The Claude Code integration can set up hooks. Codex reads the installed skills and uses the CLI to check gates. Run and step state are stored under `.agents/hx/`. Telemetry export is opt-in.
+A typical ticket starts with a spec and its review, then moves through test planning, implementation, verification and any required approvals. Use `hx validate` to check installed definitions and flows. Mutation testing and generated test candidates require adapters configured in the project.
+
+To adjust an installed skill, put overrides under `.agents/custom/`. Keep the bundled skill as the baseline so that updates can still be previewed and reviewed.
